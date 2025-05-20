@@ -1,0 +1,13 @@
+pip install kubernetes kopf
+
+
+
+kubectl get helloworlds.example.com
+
+kubectl apply -f helloworld-crd.yaml
+kopf run hello-operator.py
+kubectl apply -f helloworld-resource.yaml
+
+
+kubectl delete -f helloworld-resource.yaml
+kubectl apply -f helloworld-resource.yaml

@@ -1,0 +1,6 @@
+apiVersion: example.com/v1
+kind: HelloWorld
+metadata:
+  name: my-hello
+spec:
+  message: "Hello from Kubernetes."
